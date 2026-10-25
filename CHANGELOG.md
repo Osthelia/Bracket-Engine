@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.0
+
+- Sets: `buildTree`, `subtreeOf`, `setChain`, `checkMove`, `placeAmongSiblings`, `aggregateStatus` and `resolveStatuses` handle containers nested in a set. Stages without sets are unchanged.
+
 ## 1.0.0
 
 First standalone release, extracted from the GC Stats repositories.

@@ -31,3 +31,4 @@ export * from "./stage/seeding";
 export * from "./stage/match-label";
 export * from "./stage/editor-types";
 export * from "./view/bracket-view";
+export * from "./stage/set-tree";
