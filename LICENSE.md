@@ -1,6 +1,6 @@
 # Osthelia License — Version 1.0
 
-**Copyright (c) 2026 Osthelia — GC-Stats-Website**
+**Copyright (c) 2026 Osthelia — Bracket-Engine**
 
 Osthelia is a non-profit association governed by the French law of 1 July 1901 (the "Association").
 
@@ -10,13 +10,13 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 ## 1. Attribution and Copyright Notice
 
-The above copyright notice and a link to the original repository ([https://github.com/Osthelia/GC-Stats-Website](https://github.com/Osthelia/GC-Stats-Website)) must be included in all copies or substantial portions of the Software.
+The above copyright notice and a link to the original repository ([https://github.com/Osthelia/Bracket-Engine](https://github.com/Osthelia/Bracket-Engine)) must be included in all copies or substantial portions of the Software.
 
 ### 1.1 Visible Copyright Notice
 
 Any website, bot, service, or application that uses, hosts, or is derived from the Software must display the following notice, **clearly visible to end-users**:
 
-> Based on [GC-Stats-Website](https://github.com/Osthelia/GC-Stats-Website) by [Osthelia](https://osthelia.org/)
+> Based on [Bracket-Engine](https://github.com/Osthelia/Bracket-Engine) by [Osthelia](https://osthelia.org/)
 
 The notice must be displayed in the following location, depending on the nature of the derivative work:
 
