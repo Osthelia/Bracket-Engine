@@ -1,0 +1,56 @@
+{
+  "name": "@osthelia/bracket-engine",
+  "version": "1.0.0",
+  "description": "Tournament bracket engine: generators, validation, standings, match resolution, and React viewer/editor components.",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "author": "Osthelia",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Osthelia/Bracket-Engine.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Osthelia/Bracket-Engine/issues"
+  },
+  "homepage": "https://github.com/Osthelia/Bracket-Engine#readme",
+  "keywords": ["bracket", "tournament", "esport", "swiss", "double-elimination", "round-robin"],
+  "type": "module",
+  "sideEffects": ["**/*.css"],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./react": {
+      "types": "./dist/react/index.d.ts",
+      "import": "./dist/react/index.js"
+    }
+  },
+  "files": ["dist", "LICENSE.md", "README.md", "CHANGELOG.md"],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "prepack": "npm run build"
+  },
+  "peerDependencies": {
+    "@xyflow/react": "^12.12.0",
+    "react": "^19.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@xyflow/react": { "optional": true },
+    "react": { "optional": true }
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@xyflow/react": "^12.12.0",
+    "react": "^19.3.0",
+    "tsup": "^9.0.0",
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.5"
+  }
+}
