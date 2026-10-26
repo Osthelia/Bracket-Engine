@@ -12,7 +12,7 @@
 import type { StandingsCalculator, StandingsEntry, RankedStandingsEntry } from "./types";
 import { assignRanks } from "./types";
 
-export type SwissStandingsTiebreaker = "points" | "buchholz" | "round_diff" | "seed";
+export type SwissStandingsTiebreaker = "points" | "buchholz" | "map_diff" | "round_diff" | "seed";
 
 export interface SwissStandingsConfig {
   tiebreakers: SwissStandingsTiebreaker[];
@@ -35,6 +35,7 @@ function compare(a: StandingsEntry, b: StandingsEntry, tiebreakers: SwissStandin
   for (const tb of tiebreakers) {
     if (tb === "points" && (a.points ?? 0) !== (b.points ?? 0)) return (b.points ?? 0) - (a.points ?? 0);
     if (tb === "buchholz" && a.buchholz !== b.buchholz) return b.buchholz - a.buchholz;
+    if (tb === "map_diff" && (a.mapDiff ?? 0) !== (b.mapDiff ?? 0)) return (b.mapDiff ?? 0) - (a.mapDiff ?? 0);
     if (tb === "round_diff" && a.roundDiff !== b.roundDiff) return b.roundDiff - a.roundDiff;
     if (tb === "seed" && a.seed !== b.seed) return a.seed - b.seed;
   }

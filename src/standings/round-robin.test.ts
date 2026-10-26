@@ -25,6 +25,17 @@ describe("createRoundRobinStandings", () => {
     expect(result.map((r) => r.rank)).toEqual([1, 2, 3]);
   });
 
+  it("breaks ties with map_diff before round_diff", () => {
+    const calc = createRoundRobinStandings({ tiebreakers: ["map_diff", "round_diff", "seed"] });
+    const entries: StandingsEntry[] = [
+      { id: "a", seed: 1, wins: 2, losses: 1, buchholz: 0, roundDiff: 9, mapDiff: 1 },
+      { id: "b", seed: 2, wins: 2, losses: 1, buchholz: 0, roundDiff: 2, mapDiff: 3 },
+      { id: "c", seed: 3, wins: 2, losses: 1, buchholz: 0, roundDiff: 4 },
+    ];
+    // c has no map diff, treated as 0
+    expect(calc.recompute(entries).map((r) => r.id)).toEqual(["b", "a", "c"]);
+  });
+
   it("breaks ties with round_diff then seed", () => {
     const calc = createRoundRobinStandings({ tiebreakers: ["round_diff", "seed"] });
     const entries: StandingsEntry[] = [

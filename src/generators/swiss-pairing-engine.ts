@@ -10,7 +10,7 @@
  * @link      https://github.com/Osthelia/Bracket-Engine
  */
 
-export type SwissTiebreaker = "points" | "buchholz" | "round_diff" | "seed";
+export type SwissTiebreaker = "points" | "buchholz" | "map_diff" | "round_diff" | "seed";
 
 export interface SwissConfig {
   /** Entrant becomes "qualified" once wins reaches this. `null` = no cap (free-form Swiss). */
@@ -32,6 +32,8 @@ export interface SwissEntrant {
   /** Stored in hundredths to avoid float drift (matches `group_entries.buchholz`). */
   buchholz: number;
   roundDiff: number;
+  /** Maps won minus maps lost, treated as 0 when omitted. */
+  mapDiff?: number;
   /** Hidden points of the group settings, 0 when the group has none. */
   points?: number;
   hadBye: boolean;
@@ -91,6 +93,7 @@ function tiebreakSort(entrants: SwissEntrant[], tiebreakers: SwissTiebreaker[]):
     for (const tb of tiebreakers) {
       if (tb === "points" && (a.points ?? 0) !== (b.points ?? 0)) return (b.points ?? 0) - (a.points ?? 0);
       if (tb === "buchholz" && a.buchholz !== b.buchholz) return b.buchholz - a.buchholz;
+      if (tb === "map_diff" && (a.mapDiff ?? 0) !== (b.mapDiff ?? 0)) return (b.mapDiff ?? 0) - (a.mapDiff ?? 0);
       if (tb === "round_diff" && a.roundDiff !== b.roundDiff) return b.roundDiff - a.roundDiff;
       if (tb === "seed" && a.seed !== b.seed) return a.seed - b.seed;
     }

@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.1
+
+- Swiss and round robin tiebreakers accept `map_diff` (maps won minus maps lost), read from the new optional `mapDiff` of standings and Swiss pairing entries.
+
 ## 1.1.0
 
 - Sets: `buildTree`, `subtreeOf`, `setChain`, `checkMove`, `placeAmongSiblings`, `aggregateStatus` and `resolveStatuses` handle containers nested in a set. Stages without sets are unchanged.

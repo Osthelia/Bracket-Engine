@@ -16,6 +16,8 @@ export interface StandingsEntry {
   losses: number;
   buchholz: number; // hundredths
   roundDiff: number;
+  /** Maps won minus maps lost, omitted (treated as 0) when the caller does not track it. */
+  mapDiff?: number;
   headToHead?: Map<string, "win" | "loss">; // opponentId -> result, round-robin only
   /** Optional configurable points tally (match/map/round win, forfeit win —
    *  the actual point VALUES are a caller concern, this is just a generic

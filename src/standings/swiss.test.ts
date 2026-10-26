@@ -35,6 +35,15 @@ describe("createSwissStandings", () => {
     expect(result.map((r) => r.id)).toEqual(["b", "a"]);
   });
 
+  it("uses map_diff when configured", () => {
+    const calc = createSwissStandings({ tiebreakers: ["map_diff", "buchholz", "seed"] });
+    const entries: StandingsEntry[] = [
+      { id: "a", seed: 1, wins: 2, losses: 1, buchholz: 900, roundDiff: 0, mapDiff: 0 },
+      { id: "b", seed: 2, wins: 2, losses: 1, buchholz: 100, roundDiff: 0, mapDiff: 2 },
+    ];
+    expect(calc.recompute(entries).map((r) => r.id)).toEqual(["b", "a"]);
+  });
+
   it("uses points before buchholz when configured first", () => {
     const calc = createSwissStandings({ tiebreakers: ["points", "buchholz", "seed"] });
     const entries: StandingsEntry[] = [
