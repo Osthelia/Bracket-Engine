@@ -40,6 +40,7 @@ validateGraph(graph);
 | Standings | `createRoundRobinStandings`, `createSwissStandings` |
 | Layout | `layoutBracket` (viewer), `layoutEditorGrid`, `snapToGrid` (editor) |
 | Seeding | `groupRankOrder`, `distribute`, `qualificationOrder`, `shuffle` |
+| Sets | `buildTree`, `subtreeOf`, `setChain`, `checkMove`, `placeAmongSiblings`, `resolveStatuses` (containers nested in a set; a stage without sets is a flat list) |
 
 Every format option that takes a best of (`bestOf`, `finalBestOf`, `grandFinalBestOf`, `lowerFinalBestOf`) defaults to `bestOf`.
 
@@ -115,4 +116,4 @@ npm publish --access public
 
 ## License
 
-Osthelia License v1.0, see `LICENSE.md`. The copyright headers of the source files must be kept.
+MIT, see `LICENSE.md`.

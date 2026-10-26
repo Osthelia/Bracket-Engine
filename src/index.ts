@@ -4,9 +4,9 @@
  * Generates and validates bracket formats (single/double/triple elimination,
  * round-robin, GSL, Swiss), computes standings, and resolves match outcomes.
  *
- * @copyright Copyright (c) 2026 Osthelia — GC-Stats-Website
- * @license   https://github.com/Osthelia/GC-Stats-Website/blob/main/LICENSE.md Osthelia License v1.0
- * @link      https://github.com/Osthelia/GC-Stats-Website
+ * @copyright Copyright (c) 2026 Osthelia — Bracket-Engine
+ * @license   https://github.com/Osthelia/Bracket-Engine/blob/main/LICENSE.md MIT
+ * @link      https://github.com/Osthelia/Bracket-Engine
  */
 
 export * from "./graph/types";

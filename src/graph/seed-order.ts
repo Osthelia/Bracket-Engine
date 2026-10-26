@@ -5,9 +5,9 @@
  * tournament seed ordering (1-4-2-3, 1-8-4-5-2-7-3-6, etc.), used by every
  * bracket generator that needs a round 1 pairing order.
  *
- * @copyright Copyright (c) 2026 Osthelia — GC-Stats-Website
- * @license   https://github.com/Osthelia/GC-Stats-Website/blob/main/LICENSE.md Osthelia License v1.0
- * @link      https://github.com/Osthelia/GC-Stats-Website
+ * @copyright Copyright (c) 2026 Osthelia — Bracket-Engine
+ * @license   https://github.com/Osthelia/Bracket-Engine/blob/main/LICENSE.md MIT
+ * @link      https://github.com/Osthelia/Bracket-Engine
  */
 
 /** Smallest power of two greater than or equal to n. */

@@ -5,9 +5,9 @@
  * (temporary from the generator); the repository layer maps them to real DB
  * ids on persistence.
  *
- * @copyright Copyright (c) 2026 Osthelia — GC-Stats-Website
- * @license   https://github.com/Osthelia/GC-Stats-Website/blob/main/LICENSE.md Osthelia License v1.0
- * @link      https://github.com/Osthelia/GC-Stats-Website
+ * @copyright Copyright (c) 2026 Osthelia — Bracket-Engine
+ * @license   https://github.com/Osthelia/Bracket-Engine/blob/main/LICENSE.md MIT
+ * @link      https://github.com/Osthelia/Bracket-Engine
  */
 
 export type ContainerType = "bracket" | "group";

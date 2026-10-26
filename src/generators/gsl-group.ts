@@ -5,9 +5,9 @@
  * match, and a decider) with 2 qualifying slots. Distinct from a plain
  * 4-entrant double elimination bracket: there is no grand final.
  *
- * @copyright Copyright (c) 2026 Osthelia — GC-Stats-Website
- * @license   https://github.com/Osthelia/GC-Stats-Website/blob/main/LICENSE.md Osthelia License v1.0
- * @link      https://github.com/Osthelia/GC-Stats-Website
+ * @copyright Copyright (c) 2026 Osthelia — Bracket-Engine
+ * @license   https://github.com/Osthelia/Bracket-Engine/blob/main/LICENSE.md MIT
+ * @link      https://github.com/Osthelia/Bracket-Engine
  */
 
 import type { BracketGraph, BracketEdge, MatchNode } from "../graph/types";

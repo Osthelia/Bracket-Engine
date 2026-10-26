@@ -5,9 +5,9 @@
  * tiers of double and triple elimination: pairs survivors, drops in
  * incoming losers, and tracks winner/loser feeders through each step.
  *
- * @copyright Copyright (c) 2026 Osthelia — GC-Stats-Website
- * @license   https://github.com/Osthelia/GC-Stats-Website/blob/main/LICENSE.md Osthelia License v1.0
- * @link      https://github.com/Osthelia/GC-Stats-Website
+ * @copyright Copyright (c) 2026 Osthelia — Bracket-Engine
+ * @license   https://github.com/Osthelia/Bracket-Engine/blob/main/LICENSE.md MIT
+ * @link      https://github.com/Osthelia/Bracket-Engine
  */
 
 import type { MatchNode, BracketEdge, MatchResult } from "../graph/types";

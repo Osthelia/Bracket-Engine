@@ -4,9 +4,9 @@
  * Ranks entries by wins, then a configurable tiebreaker chain (points,
  * Buchholz, round diff, seed), matching the pairing engine's own ordering.
  *
- * @copyright Copyright (c) 2026 Osthelia — GC-Stats-Website
- * @license   https://github.com/Osthelia/GC-Stats-Website/blob/main/LICENSE.md Osthelia License v1.0
- * @link      https://github.com/Osthelia/GC-Stats-Website
+ * @copyright Copyright (c) 2026 Osthelia — Bracket-Engine
+ * @license   https://github.com/Osthelia/Bracket-Engine/blob/main/LICENSE.md MIT
+ * @link      https://github.com/Osthelia/Bracket-Engine
  */
 
 import type { StandingsCalculator, StandingsEntry, RankedStandingsEntry } from "./types";

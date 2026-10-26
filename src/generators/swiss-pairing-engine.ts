@@ -5,9 +5,9 @@
  * per round, given current entrant standings and full pairing history, to
  * produce that round's pairings. Pure functions only: DTOs in, DTOs out.
  *
- * @copyright Copyright (c) 2026 Osthelia — GC-Stats-Website
- * @license   https://github.com/Osthelia/GC-Stats-Website/blob/main/LICENSE.md Osthelia License v1.0
- * @link      https://github.com/Osthelia/GC-Stats-Website
+ * @copyright Copyright (c) 2026 Osthelia — Bracket-Engine
+ * @license   https://github.com/Osthelia/Bracket-Engine/blob/main/LICENSE.md MIT
+ * @link      https://github.com/Osthelia/Bracket-Engine
  */
 
 export type SwissTiebreaker = "points" | "buchholz" | "round_diff" | "seed";
